@@ -8,8 +8,6 @@ client = gspread.authorize(creds)
 
 sheet = client.open('spread_sheet_test').sheet1
 
-names = ['Yota', 'Takato', 'Yosuke', 'Makoto', 'Keita']
-
 for i in range(100):
     sheet.update_cell(random.randint(1, 10), random.randint(1, 10), random.randint(1,10))
     print(i)
